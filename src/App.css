@@ -1,38 +1,64 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  text-align: right;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employee_card_wr{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.emp_card{
+  width: 20%;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 0px 19px rgb(0 0 0 / 50%);
+}
+.card_footer{
+  display: flex;
+    justify-content: flex-end;
+}
+.del_btn{
+  margin-left: 5px;
+}
+.subheading{
+  text-align: left;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #212225;
+}
+.gender_group{
+  display: flex ;
+  margin-left: 25px;
+}
+.form-field{
+  margin-bottom: 20px;
+  position: relative;
+}
+.form_inner{
+  display: flex;
+}
+.radio-2{
+  margin-left: 15px;
+}
+.error{
+  color: red;
+  position: absolute;
+  font-size: 13px;
+}
+input[type="text"] ,select{
+  padding: 6px 12px;
+    width: 100%;
+}
+.loading{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  font-size:25px;
+  color:blue;
+  height:100vh;
+  width:100%;
+  font-weight: 900;
 }
